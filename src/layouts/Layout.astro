@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import Head from '../components/Head.astro';
+import Navigation from '../components/Navigation.astro';
+import Title from '../components/Title.astro';
+---
+<!-- GOING TO NEED MEDIA QUERY -> L-R for tablets up, stack from iphone down -->
+<!DOCTYPE html>
+<html lang="en">
+<Head />
+<body>
+<div class="background min-h-screen flex justify-center items-center">
+    <div class="border-4 border-charcoal-900 border-sm flex w-[var(--container-width)] h-[var(--container-height)]">
+        <div class="header flex justify-center border-2 ml-4 border-green-500">
+            <div class="wrapper flex flex-col gap-7 py-5">
+                <Title />
+                <Navigation />
+            </div>
+        </div>  
+        <div class="h-full flex items-end"> 
+            <p>This is me. I am going to put information about myself here. what information you may ask? I have no idea because I genuinlly have nothing ot put down. let me know what you would like to know about me because really you are here for the projects page</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

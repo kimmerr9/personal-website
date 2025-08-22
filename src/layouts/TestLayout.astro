@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import ThemeBtn from '../components/ThemeBtn.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import Container from '../components/Container.astro';
+
+---
+<!-- GOING TO NEED MEDIA QUERY -> L-R for tablets up, stack from iphone down -->
+<!DOCTYPE html>
+<html lang="en">
+<Head />
+<body>
+<div class="min-h-screen flex justify-center items-center bg-charcoal-900">
+    <!-- z index 1 div below-->
+    <div class="border-4 border-chalk-100 text-chalk-100 border-sm flex w-[var(--container-width)] h-[var(--container-height)] pt-7 pl-7 pr-7">
+        <div class="w-1/2">
+            <Header />
+        </div>
+        <div class="flex items-end justify-end w-full border-1 border-cyan-500">
+            <div class="w-3/4 h-3/4 flex items-end justify-end border-1 border-amber-300">
+                <!-- load components here -->
+        
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

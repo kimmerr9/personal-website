@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+import NavItem from './NavItem.astro';
+---
+<header class="border-1 border-blue-500">
+    <nav>
+        <ul class="flex flex-col gap-1">
+            <NavItem href="#" navItem="home"/>
+            <NavItem href="/about" navItem="about"/>
+            <NavItem href="/projects" navItem="projects"/>
+            <NavItem href="/contact" navItem="contact"/>
+        </ul>
+    </nav>
+</header>

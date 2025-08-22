@@ -1,0 +1,68 @@
+--- 
+import '../styles/global.css';
+
+const PROJECTS = [
+    {
+        title: 'project a',
+        date: 'Mar.2025',
+        job: 'dev',
+        name: 'justin kim'
+    },
+    {
+        title: 'super project b',
+        date: 'Jan.2025',
+        job: 'dev',
+        name: 'justin kim'
+    },
+    {
+        title: 'project c',
+        date: 'Nov.2024',
+        job: 'dev',
+        name: 'justin kim'
+    },
+    {
+        title: 'proj d',
+        date: 'Sep.2024',
+        job: 'dev',
+        name: 'justin kim'
+    }, 
+    {
+        title: 'mega project dd',
+        date: 'Sep.2024',
+        job: 'dev',
+        name: 'justin kim'
+    }, 
+    {
+        title: 'god damn project e',
+        date: 'Sep.2024',
+        job: 'dev',
+        name: 'justin kim'
+    } 
+    
+
+]
+---
+<style>
+    /* TO TAILWIND */
+    .fade {
+        scrollbar-width: none;
+        mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 20%,
+            black 80%,
+            transparent 100%
+        );
+    }
+</style>
+<!-- add border here whenever confused -->
+<div class="fade max-h-full py-[50px] overflow-y-auto"> 
+    <!-- add another border here whenver confused -->
+    <div class="h-full w-full flex flex-col items-end gap-7 relative border-2 border-dashed border-blue-500">
+        {PROJECTS.map((project) => (
+        <div class="my-2">
+            <h1 class="text-right text-6xl">{project.title}</h1>
+            <p class="text-right">{project.date}, {project.job}, {project.name}</p>
+        </div>
+        ))} 
+    </div>
+</div>

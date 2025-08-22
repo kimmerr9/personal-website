@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    box-sizing: border-box;
+}
+
+@theme {
+    --container-width: calc(100vw - 60px);
+    --container-height: calc(100vh - 60px);
+
+    
+    /* for light and dark mode toggle */
+    --color-charcoal-900: oklch(18.22% 0 0);
+    --color-chalk-100: oklch(90.67% 0 0)
+}
+
